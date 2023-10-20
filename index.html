@@ -1,1 +1,24 @@
-<h1>Fetcher - b2</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fetcher</title>
+</head>
+<body>
+
+<h1>Fetcher</h1>
+
+<script>
+    alert( 'Fetching' );
+	logMovies()
+
+	async function logMovies() {
+  		// const response = await fetch("https://map-mania-json.azurewebsites.net/api/favorite-places");
+  		const response = await fetch("https://a-test-node-b1.azurewebsites.net/api/favorite-places");
+		  
+  		const movies = await response.json();
+  		console.log(movies);
+	}
+</script>
+
+</body>
+</html> 
